@@ -58,7 +58,11 @@ public class Item : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        if (_isPremium) _popUpPremium.SetActive(true);
-        else _popUpView.SetActive(true);
+        if (_isPremium) Instantiate(_popUpPremium);
+        else
+        {
+            var popUp = Instantiate(_popUpView);
+            popUp.GetComponent<PopUpView>().SetImage(_image.sprite);
+        }
     }
 }

@@ -264,6 +264,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _image: {fileID: 3093191037649824220}
   _premiumBadge: {fileID: 3176550033179998555}
+  _popUpView: {fileID: 9059439761014016346, guid: 4c1bb9540306df348ac1550e037bdfcb, type: 3}
+  _popUpPremium: {fileID: 3007871730801294940, guid: 31034efb8fa38a0489e0e4ea72a56b6f, type: 3}
 --- !u!1 &6064204249442770867
 GameObject:
   m_ObjectHideFlags: 0
