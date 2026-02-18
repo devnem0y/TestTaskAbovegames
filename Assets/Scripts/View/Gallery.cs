@@ -18,6 +18,10 @@ public class Gallery : MonoBehaviour
     
     private void Awake()
     {
+#if UNITY_EDITOR
+        _imageMaxCount = 15;
+#endif
+        
         _tabBar.onTabSelected += SetFilter;
         _scroll.onValueChanged.AddListener(_ => CheckVisibilityItems());
         
